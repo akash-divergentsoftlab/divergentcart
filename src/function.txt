@@ -1,0 +1,12 @@
+import React from 'react';
+import './function.styles.scss';
+
+function Function() {
+    return (
+        <div className='function'>
+
+        </div>
+    )
+};
+
+export default Function;
