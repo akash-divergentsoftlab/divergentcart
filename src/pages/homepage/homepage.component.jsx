@@ -16,10 +16,10 @@ function Homepage() {
         <div className='homepage'>
             <Carousel />
             <div id="mainBody">
-                <div class="container">
-                    <div class="row">
+                <div className="container">
+                    <div className="row">
                         <Sidebar />
-                        <div class="span9">
+                        <div className="span9">
                             <FeaturedProducts />
                             <AllProducts/>
                         </div>

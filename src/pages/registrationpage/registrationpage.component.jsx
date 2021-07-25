@@ -11,14 +11,14 @@ function RegistrationPage() {
     return (
         <div className='registrationpage'>
             <div id="mainBody">
-                <div class="container">
-                    <div class="row">
+                <div className="container">
+                    <div className="row">
                         <Sidebar />
-                        <div class="span9">
+                        <div className="span9">
                             <Breadcrumb />
-                            <hr class="soft" />
+                            <hr className="soft" />
                             <h3> Registration</h3>
-                            <div class="well">
+                            <div className="well">
                                 <Registration />
                             </div>
                         </div>

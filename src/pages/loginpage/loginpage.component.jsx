@@ -12,14 +12,14 @@ function LoginPage() {
     return (
         <div className='loginpage'>
             <div id="mainBody">
-                <div class="container">
-                    <div class="row">
+                <div className="container">
+                    <div className="row">
                         <Sidebar />
-                        <div class="span9">
+                        <div className="span9">
                             <Breadcrumb />
-                            <hr class="soft" />
+                            <hr className="soft" />
                             <h3> Login</h3>
-                            <hr class="soft" />
+                            <hr className="soft" />
                             <LoginForm/>
                         </div>
                     </div>

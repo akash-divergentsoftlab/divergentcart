@@ -15,22 +15,22 @@ function ProductDetail() {
     return (
         <div className='products-detail'>
             <div id="mainBody">
-                <div class="container">
-                    <div class="row">
+                <div className="container">
+                    <div className="row">
                         <Sidebar />
-                        <div class="span9">
+                        <div className="span9">
                             <Breadcrumb />
-                            <hr class="soft" />
-                            <div class="row">
+                            <hr className="soft" />
+                            <div className="row">
                                 <ProductDetailGallery />
                                 <OneProductDetail />
-                                <div class="span9">
-                                    <ul id="productDetail" class="nav nav-tabs">
-                                        <li class="active"><a href="#home" data-toggle="tab">Product Details</a></li>
+                                <div className="span9">
+                                    <ul id="productDetail" className="nav nav-tabs">
+                                        <li className="active"><a href="#home" data-toggle="tab">Product Details</a></li>
                                         <li><a href="#profile" data-toggle="tab">Related Products</a></li>
                                     </ul>
-                                    <div id="myTabContent" class="tab-content">
-                                        <div class="tab-pane fade active in" id="home">
+                                    <div id="myTabContent" className="tab-content">
+                                        <div className="tab-pane fade active in" id="home">
                                             <ProductInformation />
                                             <RelatedProducts />
                                         </div>

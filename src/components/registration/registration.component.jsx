@@ -4,83 +4,83 @@ import './registration.styles.scss';
 function Registration() {
     return (
         <div className='registration'>
-            <form class="form-horizontal">
+            <form className="form-horizontal">
                 <h4>Your personal information</h4>
-                <div class="control-group">
-                    <label class="control-label" for="inputFname1">First name <sup>*</sup></label>
-                    <div class="controls">
+                <div className="control-group">
+                    <label className="control-label" for="inputFname1">First name <sup>*</sup></label>
+                    <div className="controls">
                         <input type="text" id="inputFname1" placeholder="First Name" />
                     </div>
                 </div>
-                <div class="control-group">
-                    <label class="control-label" for="inputLnam">Last name <sup>*</sup></label>
-                    <div class="controls">
+                <div className="control-group">
+                    <label className="control-label" for="inputLnam">Last name <sup>*</sup></label>
+                    <div className="controls">
                         <input type="text" id="inputLnam" placeholder="Last Name" />
                     </div>
                 </div>
-                <div class="control-group">
-                    <label class="control-label" for="input_email">Email <sup>*</sup></label>
-                    <div class="controls">
+                <div className="control-group">
+                    <label className="control-label" for="input_email">Email <sup>*</sup></label>
+                    <div className="controls">
                         <input type="text" id="input_email" placeholder="Email" />
                     </div>
                 </div>
-                <div class="control-group">
-                    <label class="control-label" for="input_password">Password <sup>*</sup></label>
-                    <div class="controls">
+                <div className="control-group">
+                    <label className="control-label" for="input_password">Password <sup>*</sup></label>
+                    <div className="controls">
                         <input type="password" id="input_password" placeholder="Password" />
                     </div>
                 </div>
-                <div class="control-group">
-                    <label class="control-label" for="input_password">Re-enter Password <sup>*</sup></label>
-                    <div class="controls">
+                <div className="control-group">
+                    <label className="control-label" for="input_password">Re-enter Password <sup>*</sup></label>
+                    <div className="controls">
                         <input type="password" id="input_password" placeholder="Password" />
                     </div>
                 </div>
 
 
                 <h4>Your address</h4>
-                <div class="control-group">
-                    <label class="control-label" for="inputFname">First name <sup>*</sup></label>
-                    <div class="controls">
+                <div className="control-group">
+                    <label className="control-label" for="inputFname">First name <sup>*</sup></label>
+                    <div className="controls">
                         <input type="text" id="inputFname" placeholder="First Name" />
                     </div>
                 </div>
-                <div class="control-group">
-                    <label class="control-label" for="inputLname">Last name <sup>*</sup></label>
-                    <div class="controls">
+                <div className="control-group">
+                    <label className="control-label" for="inputLname">Last name <sup>*</sup></label>
+                    <div className="controls">
                         <input type="text" id="inputLname" placeholder="Last Name" />
                     </div>
                 </div>
 
-                <div class="control-group">
-                    <label class="control-label" for="company">Company</label>
-                    <div class="controls">
+                <div className="control-group">
+                    <label className="control-label" for="company">Company</label>
+                    <div className="controls">
                         <input type="text" id="company" placeholder="company" />
                     </div>
                 </div>
 
-                <div class="control-group">
-                    <label class="control-label" for="address">Address<sup>*</sup></label>
-                    <div class="controls">
+                <div className="control-group">
+                    <label className="control-label" for="address">Address<sup>*</sup></label>
+                    <div className="controls">
                         <input type="text" id="address" placeholder="Adress" /> <span></span>
                     </div>
                 </div>
 
-                <div class="control-group">
-                    <label class="control-label" for="address2">Address (Line 2)<sup>*</sup></label>
-                    <div class="controls">
+                <div className="control-group">
+                    <label className="control-label" for="address2">Address (Line 2)<sup>*</sup></label>
+                    <div className="controls">
                         <input type="text" id="address2" placeholder="Adress line 2" /> <span></span>
                     </div>
                 </div>
-                <div class="control-group">
-                    <label class="control-label" for="city">City<sup>*</sup></label>
-                    <div class="controls">
+                <div className="control-group">
+                    <label className="control-label" for="city">City<sup>*</sup></label>
+                    <div className="controls">
                         <input type="text" id="city" placeholder="city" />
                     </div>
                 </div>
-                <div class="control-group">
-                    <label class="control-label" for="state">State<sup>*</sup></label>
-                    <div class="controls">
+                <div className="control-group">
+                    <label className="control-label" for="state">State<sup>*</sup></label>
+                    <div className="controls">
                         <select id="state">
                             <option value="">-</option>
                             <option value="Andhra Pradesh">Andhra Pradesh</option>
@@ -122,35 +122,35 @@ function Registration() {
                         </select>
                     </div>
                 </div>
-                <div class="control-group">
-                    <label class="control-label" for="postcode">Zip / Postal Code<sup>*</sup></label>
-                    <div class="controls">
+                <div className="control-group">
+                    <label className="control-label" for="postcode">Zip / Postal Code<sup>*</sup></label>
+                    <div className="controls">
                         <input type="text" id="postcode" placeholder="Zip / Postal Code" />
                     </div>
                 </div>
 
         
-                <div class="control-group">
-                    <label class="control-label" for="phone">Home phone <sup>*</sup></label>
-                    <div class="controls">
+                <div className="control-group">
+                    <label className="control-label" for="phone">Home phone <sup>*</sup></label>
+                    <div className="controls">
                         <input type="text" name="phone" id="phone" placeholder="phone" /> <span></span>
                     </div>
                 </div>
 
-                <div class="control-group">
-                    <label class="control-label" for="mobile">Mobile Phone </label>
-                    <div class="controls">
+                <div className="control-group">
+                    <label className="control-label" for="mobile">Mobile Phone </label>
+                    <div className="controls">
                         <input type="text" name="mobile" id="mobile" placeholder="Mobile Phone" />
                     </div>
                 </div>
 
                 <p><sup>*</sup>Required field </p>
 
-                <div class="control-group">
-                    <div class="controls">
+                <div className="control-group">
+                    <div className="controls">
                         <input type="hidden" name="email_create" value="1" />
                         <input type="hidden" name="is_new_customer" value="1" />
-                        <input class="btn btn-large btn-success" type="submit" value="Register" />
+                        <input className="btn btn-large btn-success" type="submit" value="Register" />
                     </div>
                 </div>
             </form>

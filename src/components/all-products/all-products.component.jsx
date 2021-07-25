@@ -5,94 +5,94 @@ function AllProducts() {
     return (
         <div className='all-products'>
             <h4>Latest Products </h4>
-            <ul class="thumbnails">
-                <li class="span3">
-                    <div class="thumbnail">
+            <ul className="thumbnails">
+                <li className="span3">
+                    <div className="thumbnail">
                         <a href="product_details.html"><img src="themes/images/products/6.jpg" alt="" /></a>
-                        <div class="caption">
+                        <div className="caption">
                             <h5>Product name</h5>
                             <p>
                                 Lorem Ipsum is simply dummy text.
                             </p>
 
-                            <h4 style={{textAlign:'center'}}><a class="btn" href="product_details.html"> <i
-                                class="icon-zoom-in"></i></a> <a class="btn" href="/#">Add to <i
-                                    class="icon-shopping-cart"></i></a> <a class="btn btn-primary"
+                            <h4 style={{textAlign:'center'}}><a className="btn" href="product_details.html"> <i
+                                className="icon-zoom-in"></i></a> <a className="btn" href="/#">Add to <i
+                                    className="icon-shopping-cart"></i></a> <a className="btn btn-primary"
                                         href="/#">$222.00</a></h4>
                         </div>
                     </div>
                 </li>
-                <li class="span3">
-                    <div class="thumbnail">
+                <li className="span3">
+                    <div className="thumbnail">
                         <a href="product_details.html"><img src="themes/images/products/7.jpg" alt="" /></a>
-                        <div class="caption">
+                        <div className="caption">
                             <h5>Product name</h5>
                             <p>
                                 Lorem Ipsum is simply dummy text.
                             </p>
-                            <h4 style={{textAlign:'center'}}><a class="btn" href="product_details.html"> <i
-                                class="icon-zoom-in"></i></a> <a class="btn" href="/#">Add to <i
-                                    class="icon-shopping-cart"></i></a> <a class="btn btn-primary"
+                            <h4 style={{textAlign:'center'}}><a className="btn" href="product_details.html"> <i
+                                className="icon-zoom-in"></i></a> <a className="btn" href="/#">Add to <i
+                                    className="icon-shopping-cart"></i></a> <a className="btn btn-primary"
                                         href="/#">$222.00</a></h4>
                         </div>
                     </div>
                 </li>
-                <li class="span3">
-                    <div class="thumbnail">
+                <li className="span3">
+                    <div className="thumbnail">
                         <a href="product_details.html"><img src="themes/images/products/8.jpg" alt="" /></a>
-                        <div class="caption">
+                        <div className="caption">
                             <h5>Product name</h5>
                             <p>
                                 Lorem Ipsum is simply dummy text.
                             </p>
-                            <h4 style={{textAlign:'center'}}><a class="btn" href="product_details.html"> <i
-                                class="icon-zoom-in"></i></a> <a class="btn" href="/#">Add to <i
-                                    class="icon-shopping-cart"></i></a> <a class="btn btn-primary"
+                            <h4 style={{textAlign:'center'}}><a className="btn" href="product_details.html"> <i
+                                className="icon-zoom-in"></i></a> <a className="btn" href="/#">Add to <i
+                                    className="icon-shopping-cart"></i></a> <a className="btn btn-primary"
                                         href="/#">$222.00</a></h4>
                         </div>
                     </div>
                 </li>
-                <li class="span3">
-                    <div class="thumbnail">
+                <li className="span3">
+                    <div className="thumbnail">
                         <a href="product_details.html"><img src="themes/images/products/9.jpg" alt="" /></a>
-                        <div class="caption">
+                        <div className="caption">
                             <h5>Product name</h5>
                             <p>
                                 Lorem Ipsum is simply dummy text.
                             </p>
-                            <h4 style={{textAlign:'center'}}><a class="btn" href="product_details.html"> <i
-                                class="icon-zoom-in"></i></a> <a class="btn" href="/#">Add to <i
-                                    class="icon-shopping-cart"></i></a> <a class="btn btn-primary"
+                            <h4 style={{textAlign:'center'}}><a className="btn" href="product_details.html"> <i
+                                className="icon-zoom-in"></i></a> <a className="btn" href="/#">Add to <i
+                                    className="icon-shopping-cart"></i></a> <a className="btn btn-primary"
                                         href="/#">$222.00</a></h4>
                         </div>
                     </div>
                 </li>
-                <li class="span3">
-                    <div class="thumbnail">
+                <li className="span3">
+                    <div className="thumbnail">
                         <a href="product_details.html"><img src="themes/images/products/10.jpg" alt="" /></a>
-                        <div class="caption">
+                        <div className="caption">
                             <h5>Product name</h5>
                             <p>
                                 Lorem Ipsum is simply dummy text.
                             </p>
-                            <h4 style={{textAlign:'center'}}><a class="btn" href="product_details.html"> <i
-                                class="icon-zoom-in"></i></a> <a class="btn" href="/#">Add to <i
-                                    class="icon-shopping-cart"></i></a> <a class="btn btn-primary"
+                            <h4 style={{textAlign:'center'}}><a className="btn" href="product_details.html"> <i
+                                className="icon-zoom-in"></i></a> <a className="btn" href="/#">Add to <i
+                                    className="icon-shopping-cart"></i></a> <a className="btn btn-primary"
                                         href="/#">$222.00</a></h4>
                         </div>
                     </div>
                 </li>
-                <li class="span3">
-                    <div class="thumbnail">
+                <li className="span3">
+                    <div className="thumbnail">
                         <a href="product_details.html"><img src="themes/images/products/11.jpg" alt="" /></a>
-                        <div class="caption">
+                        <div className="caption">
                             <h5>Product name</h5>
                             <p>
                                 Lorem Ipsum is simply dummy text.
                             </p>
-                            <h4 style={{textAlign:'center'}}><a class="btn" href="product_details.html"> <i
-                                class="icon-zoom-in"></i></a> <a class="btn" href="/#">Add to <i
-                                    class="icon-shopping-cart"></i></a> <a class="btn btn-primary"
+                            <h4 style={{textAlign:'center'}}><a className="btn" href="product_details.html"> <i
+                                className="icon-zoom-in"></i></a> <a className="btn" href="/#">Add to <i
+                                    className="icon-shopping-cart"></i></a> <a className="btn btn-primary"
                                         href="/#">$222.00</a></h4>
                         </div>
                     </div>

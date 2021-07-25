@@ -4,228 +4,228 @@ import './featured-products.styles.scss';
 function FeaturedProducts() {
     return (
         <div className='featured-products'>
-            <div class="well well-small">
-                <h4>Featured Products <small class="pull-right">200+ featured products</small></h4>
-                <div class="row-fluid">
-                    <div id="featured" class="carousel slide">
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <ul class="thumbnails">
-                                    <li class="span3">
-                                        <div class="thumbnail">
-                                            <i class="tag"></i>
+            <div className="well well-small">
+                <h4>Featured Products <small className="pull-right">200+ featured products</small></h4>
+                <div className="row-fluid">
+                    <div id="featured" className="carousel slide">
+                        <div className="carousel-inner">
+                            <div className="item active">
+                                <ul className="thumbnails">
+                                    <li className="span3">
+                                        <div className="thumbnail">
+                                            <i className="tag"></i>
                                             <a href="product_details.html">
                                                 <img src="themes/images/products/b1.jpg" alt="" />
                                             </a>
-                                            <div class="caption">
+                                            <div className="caption">
                                                 <h5>Product name</h5>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
-                                                    class="pull-right">$222.00</span></h4>
+                                                <h4><a className="btn" href="product_details.html">VIEW</a> <span
+                                                    className="pull-right">$222.00</span></h4>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="span3">
-                                        <div class="thumbnail">
-                                            <i class="tag"></i>
+                                    <li className="span3">
+                                        <div className="thumbnail">
+                                            <i className="tag"></i>
                                             <a href="product_details.html">
                                                 <img src="themes/images/products/b2.jpg" alt="" />
 
                                             </a>
-                                            <div class="caption">
+                                            <div className="caption">
                                                 <h5>Product name</h5>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
-                                                    class="pull-right">$222.00</span></h4>
+                                                <h4><a className="btn" href="product_details.html">VIEW</a> <span
+                                                    className="pull-right">$222.00</span></h4>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="span3">
-                                        <div class="thumbnail">
-                                            <i class="tag"></i>
+                                    <li className="span3">
+                                        <div className="thumbnail">
+                                            <i className="tag"></i>
                                             <a href="product_details.html">
                                                 <img src="themes/images/products/b3.jpg" alt="" />
                                             </a>
-                                            <div class="caption">
+                                            <div className="caption">
                                                 <h5>Product name</h5>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
-                                                    class="pull-right">$222.00</span></h4>
+                                                <h4><a className="btn" href="product_details.html">VIEW</a> <span
+                                                    className="pull-right">$222.00</span></h4>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="span3">
-                                        <div class="thumbnail">
-                                            <i class="tag"></i>
+                                    <li className="span3">
+                                        <div className="thumbnail">
+                                            <i className="tag"></i>
                                             <a href="product_details.html">
                                                 <img src="themes/images/products/b4.jpg" alt="" />
                                             </a>
-                                            <div class="caption">
+                                            <div className="caption">
                                                 <h5>Product name</h5>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
-                                                    class="pull-right">$222.00</span></h4>
+                                                <h4><a className="btn" href="product_details.html">VIEW</a> <span
+                                                    className="pull-right">$222.00</span></h4>
                                             </div>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="item">
-                                <ul class="thumbnails">
-                                    <li class="span3">
-                                        <div class="thumbnail">
-                                            <i class="tag"></i>
+                            <div className="item">
+                                <ul className="thumbnails">
+                                    <li className="span3">
+                                        <div className="thumbnail">
+                                            <i className="tag"></i>
                                             <a href="product_details.html">
                                                 <img src="themes/images/products/5.jpg" alt="" />
                                             </a>
-                                            <div class="caption">
+                                            <div className="caption">
                                                 <h5>Product name</h5>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
-                                                    class="pull-right">$222.00</span></h4>
+                                                <h4><a className="btn" href="product_details.html">VIEW</a> <span
+                                                    className="pull-right">$222.00</span></h4>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="span3">
-                                        <div class="thumbnail">
-                                            <i class="tag"></i>
+                                    <li className="span3">
+                                        <div className="thumbnail">
+                                            <i className="tag"></i>
                                             <a href="product_details.html">
                                                 <img src="themes/images/products/6.jpg" alt="" />
                                             </a>
-                                            <div class="caption">
+                                            <div className="caption">
                                                 <h5>Product name</h5>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
-                                                    class="pull-right">$222.00</span></h4>
+                                                <h4><a className="btn" href="product_details.html">VIEW</a> <span
+                                                    className="pull-right">$222.00</span></h4>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="span3">
-                                        <div class="thumbnail">
+                                    <li className="span3">
+                                        <div className="thumbnail">
                                             <a href="product_details.html">
                                                 <img src="themes/images/products/7.jpg" alt="" />
 
                                             </a>
-                                            <div class="caption">
+                                            <div className="caption">
                                                 <h5>Product name</h5>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
-                                                    class="pull-right">$222.00</span></h4>
+                                                <h4><a className="btn" href="product_details.html">VIEW</a> <span
+                                                    className="pull-right">$222.00</span></h4>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="span3">
-                                        <div class="thumbnail">
+                                    <li className="span3">
+                                        <div className="thumbnail">
                                             <a href="product_details.html">
                                                 <img src="themes/images/products/8.jpg" alt="" /></a>
-                                            <div class="caption">
+                                            <div className="caption">
                                                 <h5>Product name</h5>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
-                                                    class="pull-right">$222.00</span></h4>
+                                                <h4><a className="btn" href="product_details.html">VIEW</a> <span
+                                                    className="pull-right">$222.00</span></h4>
                                             </div>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="item">
-                                <ul class="thumbnails">
-                                    <li class="span3">
-                                        <div class="thumbnail">
+                            <div className="item">
+                                <ul className="thumbnails">
+                                    <li className="span3">
+                                        <div className="thumbnail">
                                             <a href="product_details.html">
                                                 <img src="themes/images/products/9.jpg" alt="" />
                                             </a>
-                                            <div class="caption">
+                                            <div className="caption">
                                                 <h5>Product name</h5>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
-                                                    class="pull-right">$222.00</span></h4>
+                                                <h4><a className="btn" href="product_details.html">VIEW</a> <span
+                                                    className="pull-right">$222.00</span></h4>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="span3">
-                                        <div class="thumbnail">
+                                    <li className="span3">
+                                        <div className="thumbnail">
                                             <a href="product_details.html">
                                                 <img src="themes/images/products/10.jpg" alt="" /></a>
-                                            <div class="caption">
+                                            <div className="caption">
                                                 <h5>Product name</h5>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
-                                                    class="pull-right">$222.00</span></h4>
+                                                <h4><a className="btn" href="product_details.html">VIEW</a> <span
+                                                    className="pull-right">$222.00</span></h4>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="span3">
-                                        <div class="thumbnail">
+                                    <li className="span3">
+                                        <div className="thumbnail">
                                             <a href="product_details.html">
                                                 <img src="themes/images/products/11.jpg" alt="" />
                                             </a>
-                                            <div class="caption">
+                                            <div className="caption">
                                                 <h5>Product name</h5>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
-                                                    class="pull-right">$222.00</span></h4>
+                                                <h4><a className="btn" href="product_details.html">VIEW</a> <span
+                                                    className="pull-right">$222.00</span></h4>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="span3">
-                                        <div class="thumbnail">
+                                    <li className="span3">
+                                        <div className="thumbnail">
                                             <a href="product_details.html">
                                                 <img src="themes/images/products/1.jpg" alt="" /></a>
-                                            <div class="caption">
+                                            <div className="caption">
                                                 <h5>Product name</h5>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
-                                                    class="pull-right">$222.00</span></h4>
+                                                <h4><a className="btn" href="product_details.html">VIEW</a> <span
+                                                    className="pull-right">$222.00</span></h4>
                                             </div>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="item">
-                                <ul class="thumbnails">
-                                    <li class="span3">
-                                        <div class="thumbnail">
+                            <div className="item">
+                                <ul className="thumbnails">
+                                    <li className="span3">
+                                        <div className="thumbnail">
                                             <a href="product_details.html">
                                                 <img src="themes/images/products/2.jpg" alt="" />
                                             </a>
-                                            <div class="caption">
+                                            <div className="caption">
                                                 <h5>Product name</h5>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
-                                                    class="pull-right">$222.00</span></h4>
+                                                <h4><a className="btn" href="product_details.html">VIEW</a> <span
+                                                    className="pull-right">$222.00</span></h4>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="span3">
-                                        <div class="thumbnail">
+                                    <li className="span3">
+                                        <div className="thumbnail">
                                             <a href="product_details.html">
                                                 <img src="themes/images/products/3.jpg" alt="" />
 
                                             </a>
-                                            <div class="caption">
+                                            <div className="caption">
                                                 <h5>Product name</h5>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
-                                                    class="pull-right">$222.00</span></h4>
+                                                <h4><a className="btn" href="product_details.html">VIEW</a> <span
+                                                    className="pull-right">$222.00</span></h4>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="span3">
-                                        <div class="thumbnail">
+                                    <li className="span3">
+                                        <div className="thumbnail">
                                             <a href="product_details.html">
                                                 <img src="themes/images/products/4.jpg" alt="" />
                                             </a>
-                                            <div class="caption">
+                                            <div className="caption">
                                                 <h5>Product name</h5>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
-                                                    class="pull-right">$222.00</span></h4>
+                                                <h4><a className="btn" href="product_details.html">VIEW</a> <span
+                                                    className="pull-right">$222.00</span></h4>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="span3">
-                                        <div class="thumbnail">
+                                    <li className="span3">
+                                        <div className="thumbnail">
                                             <a href="product_details.html">
                                                 <img src="themes/images/products/5.jpg" alt="" />
                                             </a>
-                                            <div class="caption">
+                                            <div className="caption">
                                                 <h5>Product name</h5>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
-                                                    class="pull-right">$222.00</span></h4>
+                                                <h4><a className="btn" href="product_details.html">VIEW</a> <span
+                                                    className="pull-right">$222.00</span></h4>
                                             </div>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <a class="left carousel-control" href="#featured" data-slide="prev">‹</a>
-                        <a class="right carousel-control" href="#featured" data-slide="next">›</a>
+                        <a className="left carousel-control" href="#featured" data-slide="prev">‹</a>
+                        <a className="right carousel-control" href="#featured" data-slide="next">›</a>
                     </div>
                 </div>
             </div>

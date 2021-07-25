@@ -4,28 +4,28 @@ import './product-details.styles.scss';
 function OneProductDetail() {
     return (
         <div className='function'>
-            <div class="span6">
+            <div className="span6">
                 <h3>Fujifilm FinePix S2950 Digital Camera </h3>
                 <small>- (14MP, 18x Optical Zoom) 3-inch LCD</small>
-                <hr class="soft" />
-                <form class="form-horizontal qtyFrm">
-                    <div class="control-group">
-                        <label class="control-label"><span>$222.00</span></label>
-                        <div class="controls">
-                            <input type="number" class="span1" placeholder="Qty." />
-                            <button type="submit" class="btn btn-large btn-primary pull-right"> Add to cart
-                                <i class=" icon-shopping-cart"></i></button>
+                <hr className="soft" />
+                <form className="form-horizontal qtyFrm">
+                    <div className="control-group">
+                        <label className="control-label"><span>$222.00</span></label>
+                        <div className="controls">
+                            <input type="number" className="span1" placeholder="Qty." />
+                            <button type="submit" className="btn btn-large btn-primary pull-right"> Add to cart
+                                <i className=" icon-shopping-cart"></i></button>
                         </div>
                     </div>
                 </form>
 
-                <hr class="soft" />
+                <hr className="soft" />
                 <h4>100 items in stock</h4>
-                <form class="form-horizontal qtyFrm pull-right">
-                    <div class="control-group">
-                        <label class="control-label"><span>Color</span></label>
-                        <div class="controls">
-                            <select class="span2">
+                <form className="form-horizontal qtyFrm pull-right">
+                    <div className="control-group">
+                        <label className="control-label"><span>Color</span></label>
+                        <div className="controls">
+                            <select className="span2">
                                 <option>Black</option>
                                 <option>Red</option>
                                 <option>Blue</option>
@@ -34,7 +34,7 @@ function OneProductDetail() {
                         </div>
                     </div>
                 </form>
-                <hr class="soft clr" />
+                <hr className="soft clr" />
                 <p>
                     14 Megapixels. 18.0 x Optical Zoom. 3.0-inch LCD Screen. Full HD photos and 1280 x 720p
                     HD movie capture. ISO sensitivity ISO6400 at reduced resolution.
@@ -45,10 +45,10 @@ function OneProductDetail() {
                     and memory card).
 
                 </p>
-                <a class="btn btn-small pull-right" href="#detail">More Details</a>
-                <br class="clr" />
+                <a className="btn btn-small pull-right" href="#detail">More Details</a>
+                <br className="clr" />
                 <a href="/#" name="detail">v</a>
-                <hr class="soft" />
+                <hr className="soft" />
             </div>
         </div>
     )

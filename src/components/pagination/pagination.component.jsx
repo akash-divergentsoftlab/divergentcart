@@ -4,8 +4,8 @@ import './pagination.styles.scss';
 function Pagination() {
     return (
         <div className='pagination'>
-            <a href="compair.html" class="btn btn-large pull-right">Compair Product</a>
-            <div class="pagination">
+            <a href="compair.html" className="btn btn-large pull-right">Compair Product</a>
+            <div className="pagination">
                 <ul>
                     <li><a href="c">&lsaquo;</a></li>
                     <li><a href="/#">1</a></li>
@@ -16,7 +16,7 @@ function Pagination() {
                     <li><a href="/#">&rsaquo;</a></li>
                 </ul>
             </div>
-            <br class="clr" />
+            <br className="clr" />
         </div>
     )
 };

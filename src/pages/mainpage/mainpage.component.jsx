@@ -13,13 +13,13 @@ function Mainpage() {
     return (
         <div className='mainpage'>
             <div id="mainBody">
-                <div class="container">
-                    <div class="row">
+                <div className="container">
+                    <div className="row">
                         <Sidebar />
-                        <div class="span9">
+                        <div className="span9">
                             <Breadcrumb />
-                            <h4> 20% Discount Special offer<small class="pull-right"> 40 products are available </small></h4>
-                            <hr class="soft" />
+                            <h4> 20% Discount Special offer<small className="pull-right"> 40 products are available </small></h4>
+                            <hr className="soft" />
                             <Sorting />
                             <Products />
                         </div>

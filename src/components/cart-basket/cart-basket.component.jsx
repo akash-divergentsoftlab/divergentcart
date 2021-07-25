@@ -4,7 +4,7 @@ import './cart-basket.styles.scss';
 function CartBasket() {
     return (
         <div className='cart-basket'>
-            <table class="table table-bordered">
+            <table className="table table-bordered">
                 <thead>
                     <tr>
                         <th>Product</th>
@@ -21,13 +21,13 @@ function CartBasket() {
                         <td> <img width="60" src="themes/images/products/4.jpg" alt="" /></td>
                         <td>MASSA AST<br />Color : black, Material : metal</td>
                         <td>
-                            <div class="input-append">
-                                <input class="span1" style={{ maxWidth: '34px' }}
+                            <div className="input-append">
+                                <input className="span1" style={{ maxWidth: '34px' }}
                                     placeholder="1" id="appendedInputButtons" size="16" type="text" /><button
-                                        class="btn" type="button"><i class="icon-minus"></i></button><button
-                                            class="btn" type="button"><i class="icon-plus"></i></button><button
-                                                class="btn btn-danger" type="button"><i
-                                                    class="icon-remove icon-white"></i></button> </div>
+                                        className="btn" type="button"><i className="icon-minus"></i></button><button
+                                            className="btn" type="button"><i className="icon-plus"></i></button><button
+                                                className="btn btn-danger" type="button"><i
+                                                    className="icon-remove icon-white"></i></button> </div>
                         </td>
                         <td>$120.00</td>
                         <td>$25.00</td>
@@ -38,13 +38,13 @@ function CartBasket() {
                         <td> <img width="60" src="themes/images/products/8.jpg" alt="" /></td>
                         <td>MASSA AST<br />Color : black, Material : metal</td>
                         <td>
-                            <div class="input-append">
-                                <input class="span1" style={{ maxWidth: '34px' }}
+                            <div className="input-append">
+                                <input className="span1" style={{ maxWidth: '34px' }}
                                     placeholder="1" size="16" type="text" />
-                                <button class="btn" type="button">
-                                    <i class="icon-minus"></i></button><button class="btn" type="button"><i
-                                        class="icon-plus"></i></button><button class="btn btn-danger"
-                                            type="button"><i class="icon-remove icon-white"></i></button> </div>
+                                <button className="btn" type="button">
+                                    <i className="icon-minus"></i></button><button className="btn" type="button"><i
+                                        className="icon-plus"></i></button><button className="btn btn-danger"
+                                            type="button"><i className="icon-remove icon-white"></i></button> </div>
                         </td>
                         <td>$7.00</td>
                         <td>--</td>
@@ -55,13 +55,13 @@ function CartBasket() {
                         <td> <img width="60" src="themes/images/products/3.jpg" alt="" /></td>
                         <td>MASSA AST<br />Color : black, Material : metal</td>
                         <td>
-                            <div class="input-append">
-                                <input class="span1" style={{ maxWidth: '34px' }}
+                            <div className="input-append">
+                                <input className="span1" style={{ maxWidth: '34px' }}
                                     placeholder="1" size="16" type="text" />
-                                <button class="btn" type="button"><i
-                                    class="icon-minus"></i></button><button class="btn" type="button"><i
-                                        class="icon-plus"></i></button><button class="btn btn-danger"
-                                            type="button"><i class="icon-remove icon-white"></i></button> </div>
+                                <button className="btn" type="button"><i
+                                    className="icon-minus"></i></button><button className="btn" type="button"><i
+                                        className="icon-plus"></i></button><button className="btn btn-danger"
+                                            type="button"><i className="icon-remove icon-white"></i></button> </div>
                         </td>
                         <td>$120.00</td>
                         <td>$25.00</td>
@@ -84,7 +84,7 @@ function CartBasket() {
                     <tr>
                         <td colspan="6" style={{ textAlign: 'right' }}><strong>TOTAL ($228 - $50 + $31) =</strong>
                         </td>
-                        <td class="label label-important" style={{ display: 'block' }}> <strong> $155.00 </strong></td>
+                        <td className="label label-important" style={{ display: 'block' }}> <strong> $155.00 </strong></td>
                     </tr>
                 </tbody>
             </table>

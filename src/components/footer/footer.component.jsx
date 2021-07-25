@@ -6,9 +6,9 @@ function Footer() {
         <div className='footer'>
             {/* <!-- Footer ================================================================== --> */}
             <div id="footerSection">
-                <div class="container">
-                    <div class="row">
-                        <div class="span3">
+                <div className="container">
+                    <div className="row">
+                        <div className="span3">
                             <h5>ACCOUNT</h5>
                             <a href="login.html">YOUR ACCOUNT</a>
                             <a href="login.html">PERSONAL INFORMATION</a>
@@ -16,7 +16,7 @@ function Footer() {
                             <a href="login.html">DISCOUNT</a>
                             <a href="login.html">ORDER HISTORY</a>
                         </div>
-                        <div class="span3">
+                        <div className="span3">
                             <h5>INFORMATION</h5>
                             <a href="contact.html">CONTACT</a>
                             <a href="register.html">REGISTRATION</a>
@@ -24,7 +24,7 @@ function Footer() {
                             <a href="tac.html">TERMS AND CONDITIONS</a>
                             <a href="faq.html">FAQ</a>
                         </div>
-                        <div class="span3">
+                        <div className="span3">
                             <h5>OUR OFFERS</h5>
                             <a href="/#">NEW PRODUCTS</a>
                             <a href="/#">TOP SELLERS</a>
@@ -32,7 +32,7 @@ function Footer() {
                             <a href="/#">MANUFACTURERS</a>
                             <a href="/#">SUPPLIERS</a>
                         </div>
-                        <div id="socialMedia" class="span3 pull-right">
+                        <div id="socialMedia" className="span3 pull-right">
                             <h5>SOCIAL MEDIA </h5>
                             <a href="/#"><img width="60" height="60" src="themes/images/facebook.png" title="facebook"
                                 alt="facebook" /></a>
@@ -42,7 +42,7 @@ function Footer() {
                                 alt="youtube" /></a>
                         </div>
                     </div>
-                    <p class="pull-right">&copy; Bootshop</p>
+                    <p className="pull-right">&copy; Bootshop</p>
                 </div>
                 {/* <!-- Container End --> */}
             </div>

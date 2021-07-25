@@ -13,19 +13,19 @@ function CartPage() {
     return (
         <div className='function'>
             <div id="mainBody">
-                <div class="container">
-                    <div class="row">
+                <div className="container">
+                    <div className="row">
                         <Sidebar />
-                        <div class="span9">
+                        <div className="span9">
                             <Breadcrumb />
-                            <hr class="soft" />
+                            <hr className="soft" />
                             <h3> SHOPPING CART [ <small>3 Item(s) </small>]<a href="products.html"
-                                class="btn btn-large pull-right"><i class="icon-arrow-left"></i> Continue Shopping </a></h3>
-                            <hr class="soft" />
+                                className="btn btn-large pull-right"><i className="icon-arrow-left"></i> Continue Shopping </a></h3>
+                            <hr className="soft" />
                             <CartUserRegistration />
                             <CartBasket />
-                            <a href="products.html" class="btn btn-large"><i class="icon-arrow-left"></i> Continue Shopping </a>
-                            <a href="login.html" class="btn btn-large pull-right">Next <i class="icon-arrow-right"></i></a>
+                            <a href="products.html" className="btn btn-large"><i className="icon-arrow-left"></i> Continue Shopping </a>
+                            <a href="login.html" className="btn btn-large pull-right">Next <i className="icon-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
