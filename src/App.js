@@ -2,12 +2,15 @@ import './App.css';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import React from 'react';
 
-import { auth, createUserProfileDocument } from './firebase/firebase.utils';
-import { createStructuredSelector } from 'reselect';
-import { connect } from 'react-redux';
 
-import { setCurrentUser } from './redux/user/user.actions';
-import { selectCurrentUser } from './redux/user/user.selectors';
+
+
+// import { auth, createUserProfileDocument } from './firebase/firebase.utils';
+// import { createStructuredSelector } from 'reselect';
+// import { connect } from 'react-redux';
+
+// import { setCurrentUser } from './redux/user/user.actions';
+// import { selectCurrentUser } from './redux/user/user.selectors';
 
 
 // all components imports are here 
@@ -23,30 +26,8 @@ import RegistrationPage from './pages/registrationpage/registrationpage.componen
 
 
 class App extends React.Component {
-  unsubscribeFromAuth = null;
 
-  componentDidMount() {
-    const { setCurrentUser } = this.props;
 
-    this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
-      if (userAuth) {
-        const userRef = await createUserProfileDocument(userAuth);
-
-        userRef.onSnapshot(snapShot => {
-          setCurrentUser({
-            id: snapShot.id,
-            ...snapShot.data()
-          });
-        });
-      }
-
-      setCurrentUser(userAuth);
-    });
-  }
-
-  componentWillUnmount() {
-    this.unsubscribeFromAuth();
-  }
 
   render() {
     return (
@@ -57,7 +38,7 @@ class App extends React.Component {
           <Route exact path='/main-page' component={Mainpage} />
           <Route exact path='/product-detail' component={ProductDetail} />
           <Route exact path='/mycart' component={CartPage} />
-          <Route exact path='/login-signup' render={() => this.props.currentUser ? (<Redirect to='/' />) : (<LoginPage />)}/>
+          <Route exact path='/login-signup' render={() => this.props.currentUser ? (<Redirect to='/' />) : (<LoginPage />)} />
           <Route exact path='/register' component={RegistrationPage} />
         </Switch>
         <Footer />
@@ -66,18 +47,8 @@ class App extends React.Component {
   }
 }
 
-const mapStateToProps = createStructuredSelector({
-  currentUser: selectCurrentUser
-});
 
-const mapDispatchToProps = dispatch => ({
-  setCurrentUser: user => dispatch(setCurrentUser(user))
-});
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(App);
+export default App;
 
 
 

@@ -4,7 +4,8 @@ import './registrationpage.styles.scss';
 // other components imports are here 
 import Sidebar from './../../components/sidebar/sidebar.component';
 import Breadcrumb from './../../components/breadcrumb/breadcrumb.component';
-import Registration from '../../components/registration/registration.component';
+// import Registration from './../../components/registration/registration.component';
+
 
 
 function RegistrationPage() {
@@ -19,7 +20,7 @@ function RegistrationPage() {
                             <hr className="soft" />
                             <h3> Registration</h3>
                             <div className="well">
-                                <Registration />
+                                {/* <Registration /> */}
                             </div>
                         </div>
                     </div>

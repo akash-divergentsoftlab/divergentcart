@@ -1,28 +1,42 @@
-import React from 'react';
+import React, { useState, useEffect, setError } from 'react';
 import './sidebar.styles.scss';
+import { Link } from 'react-router-dom';
+
 
 function Sidebar() {
+    const [users, setUsers] = useState(null);
+    const [error, setError] = useState(null);
+    useEffect(() => {
+        fetch("http://192.168.1.18:9000/api/category")
+            .then((j) => j.json())
+            .then((users) => setUsers(users))
+            .catch((error) => setError(error));
+    }, []);
+    if (!users) return <div>APi not working</div>;
     return (
         <div className='sidebar'>
             {/* <!-- Sidebar ================================================== --> */}
             <div id="sidebar" className="span3">
-                <div className="well well-small"><a id="myCart" href="product_summary.html">
+                <div className="well well-small"><Link id="myCart" to="/mycart">
                     <img src="themes/images/ico-cart.png" alt="cart" />
                     3 Items in your cart
-                    <span className="badge badge-warning pull-right">$155.00</span></a></div>
+                    <span className="badge badge-warning pull-right">$155.00</span></Link></div>
                 <ul id="sideManu" className="nav nav-tabs nav-stacked">
-                    <li className="subMenu open"><a href='/#'> ELECTRONICS [230]</a>
-                        <ul>
-                            <li><a className="active" href="products.html"><i className="icon-chevron-right"></i>Cameras
-                                (100) </a></li>
-                            <li><a href="products.html"><i className="icon-chevron-right"></i>Computers, Tablets &
-                                laptop (30)</a></li>
-                            <li><a href="products.html"><i className="icon-chevron-right"></i>Mobile Phone (80)</a></li>
-                            <li><a href="products.html"><i className="icon-chevron-right"></i>Sound & Vision (15)</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li className="subMenu"><a href='/#'> CLOTHES [840] </a>
+                    {users.map((u) => (
+                        <li className="subMenu open" key={u.id} ><a href='/#'> {u.categoryName} [230]</a>
+                            <ul>
+                                <li><a className="active" href="products.html"><i className="icon-chevron-right"></i>Cameras
+                                    (100) </a></li>
+                                <li><a href="products.html"><i className="icon-chevron-right"></i>Computers, Tablets &
+                                    laptop (30)</a></li>
+                                <li><a href="products.html"><i className="icon-chevron-right"></i>Mobile Phone (80)</a></li>
+                                <li><a href="products.html"><i className="icon-chevron-right"></i>Sound & Vision (15)</a>
+                                </li>
+                            </ul>
+                        </li>
+                    ))}
+
+                    {/* <li className="subMenu"><a href='/#'> CLOTHES [840] </a>
                         <ul style={{ display: 'none' }}>
                             <li><a href="products.html"><i className="icon-chevron-right"></i>Women's Clothing (45)</a>
                             </li>
@@ -54,7 +68,7 @@ function Sidebar() {
                     </li>
                     <li><a href="products.html">HEALTH & BEAUTY [18]</a></li>
                     <li><a href="products.html">SPORTS & LEISURE [58]</a></li>
-                    <li><a href="products.html">BOOKS & ENTERTAINMENTS [14]</a></li>
+                    <li><a href="products.html">BOOKS & ENTERTAINMENTS [14]</a></li> */}
                 </ul>
                 <br />
                 <div className="thumbnail">
