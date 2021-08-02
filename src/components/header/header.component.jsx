@@ -17,7 +17,7 @@ function Header() {
                             <span className="icon-bar"></span>
                         </a>
                         <div className="navbar-inner">
-                            <Link className="brand" to="/">DivergentCart</Link>
+                            <Link className="brand" to="/">InKart</Link>
                             <form className="form-inline navbar-search" method="post" action="products.html">
                                 <input id="srchFld" className="srchTxt" type="text" />
                                 <button type="submit" id="submitButton" className="btn btn-primary">Search</button>

@@ -1,13 +1,32 @@
-import React from 'react';
-import Products from '../products/products.component';
-import './product-list.styles.scss';
+// import React, { Component } from 'react'
+// import Products from '../products/products.component';
+// import './product-list.styles.scss';
 
-function ProductList() {
-    return (
-        <div className='product-list'>
-            <Products />
-        </div>
-    )
-};
+// class ProductList extends Component {
+    
+//     state ={
+//         allProducts : [],
+//     }
 
-export default ProductList;
+//     componentDidMount() {
+//         fetch("http://localhost:9000/api/product")
+//         .then((res) => res.json())
+//         .then((data) => {
+//           this.setState({ allProducts: data });
+//         })
+//         .catch(console.log);
+//     }
+//     render() {
+//         return (
+//           <div class="card">
+            
+//             <Products allProducts={this.state.allProducts} />
+//           </div>
+//         );
+//       }
+
+// };
+
+
+
+// export default ProductList;

@@ -1,69 +1,96 @@
-import React from 'react';
-import './products.styles.scss';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import { Link } from "react-router-dom";
 
 
+import "./products.styles.scss";
 
+const Products = () => {
+  const [products, setProduct] = useState([]);
 
+  useEffect(() => {
+    loadProducts();
+  }, []);
 
-function Products() {
-    return (
-        <div className='productss'>
-            <div className="tab-content">
-                <div className="tab-pane" id="listView">
-                    <div className="row">
-                        <div className="span2">
-                            <img src="themes/images/products/b1.jpg" alt="" />
-                        </div>
-                        <div className="span4">
-                            <h3>New | Available</h3>
-                            <hr className="soft" />
-                            <h5>Product Name </h5>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                Ipsum has been the industry's standard dummy text ever since the 1500s ...
-                            </p>
-                            <a className="btn btn-small pull-right" href="product_details.html">View Details</a>
-                            <br className="clr" />
-                        </div>
-                        <div className="span3 alignR">
-                            <form className="form-horizontal qtyFrm">
-                                <h3> $110.00</h3>
-                                <label className="checkbox">
-                                    <input type="checkbox" /> Adds product to compair
-                                </label><br />
-                                <a href="product_details.html" className="btn btn-large btn-primary"> Add to <i
-                                    className=" icon-shopping-cart"></i></a>
-                                <a href="product_details.html" className="btn btn-large"><i
-                                    className="icon-zoom-in"></i></a>
-                            </form>
-                        </div>
-                    </div>
-                    <hr className="soft" />
+  const loadProducts = async () => {
+    const result = await axios.get("http://localhost:9000/api/product");
+    setProduct(result.data);
+  };
+
+  return (
+    <div className="productss">
+      <div className="tab-content">
+        <div className="tab-pane  active" id="blockView">
+          <ul className="thumbnails">
+            {products.map((product) => (
+              <li className="span3">
+                <div className="thumbnail">
+                  <Link to={`/product-detail/${product.productId}`}>
+                    <img
+                      src={product.imageUrl}
+                      style={{ height: "180px", width: "220px" }}
+                      alt={product.productName}
+                    />
+                  </Link>
+                  <div className="caption">
+                    <h5>{product.productName}</h5>
+                    <p>Rs {product.price}</p>
+                    <h4 style={{ textAlign: "center" }}>
+                      <a className="btn" href="/product-detail">
+                        {" "}
+                        View Detail
+                      </a>{" "}
+                      <a className="btn" href="/#">
+                        Add to <i className="icon-shopping-cart"></i>
+                      </a>{" "}
+                    </h4>
+                  </div>
                 </div>
-                <div className="tab-pane  active" id="blockView">
-                    <ul className="thumbnails">
-                        <li className="span3">
-                            <div className="thumbnail">
-                                <a href="product_details.html"><img src="themes/images/products/b1.jpg"
-                                    alt="" /></a>
-                                <div className="caption">
-                                    <h5>Manicure &amp; Pedicure</h5>
-                                    <p>
-                                        Lorem Ipsum is simply dummy text.
-                                    </p>
-                                    <h4 style={{ textAlign: 'center' }}><a className="btn" href="product_details.html"> <i
-                                        className="icon-zoom-in"></i></a> <a className="btn" href="/#">Add to <i
-                                            className="icon-shopping-cart"></i></a> <a className="btn btn-primary"
-                                                href="/#">&euro;110.00</a></h4>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <hr className="soft" />
-                </div>
-            </div>
+              </li>
+            ))}
+          </ul>
+          <hr className="soft" />
         </div>
-    )
+      </div>
+    </div>
+  );
 };
+
+// const Products = ({ allProducts }) => {
+//   return (
+//     <div className="productss">
+//       <div className="tab-content">
+//         <div className="tab-pane  active" id="blockView">
+//           <ul className="thumbnails">
+//           {allProducts.map((product) => (
+//                 <li className="span3">
+//                 <div className="thumbnail">
+//                   <a href="/product-detail">
+//                     <img src={product.imageUrl} style={{height:'180px', width:'220px'}} alt={product.productName} />
+//                   </a>
+//                   <div className="caption">
+//                     <h5>{product.productName}</h5>
+//                     <p>Rs {product.price}</p>
+//                     <h4 style={{ textAlign: "center" }}>
+//                       <a className="btn" href="/product-detail">
+//                         {" "}
+//                         View Detail
+//                       </a>{" "}
+//                       <a className="btn" href="/#">
+//                         Add to <i className="icon-shopping-cart"></i>
+//                       </a>{" "}
+
+//                     </h4>
+//                   </div>
+//                 </div>
+//                 </li>
+//               ))}
+//           </ul>
+//           <hr className="soft" />
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
 
 export default Products;

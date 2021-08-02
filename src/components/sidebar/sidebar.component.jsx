@@ -7,7 +7,7 @@ function Sidebar() {
     const [users, setUsers] = useState(null);
     const [error, setError] = useState(null);
     useEffect(() => {
-        fetch("http://192.168.1.18:9000/api/category")
+        fetch("http://localhost:9000/api/sub_category")
             .then((j) => j.json())
             .then((users) => setUsers(users))
             .catch((error) => setError(error));
@@ -23,15 +23,9 @@ function Sidebar() {
                     <span className="badge badge-warning pull-right">$155.00</span></Link></div>
                 <ul id="sideManu" className="nav nav-tabs nav-stacked">
                     {users.map((u) => (
-                        <li className="subMenu open" key={u.id} ><a href='/#'> {u.categoryName} [230]</a>
+                        <li className="subMenu open"  ><a href='/#'> {u.categoryName} </a>
                             <ul>
-                                <li><a className="active" href="products.html"><i className="icon-chevron-right"></i>Cameras
-                                    (100) </a></li>
-                                <li><a href="products.html"><i className="icon-chevron-right"></i>Computers, Tablets &
-                                    laptop (30)</a></li>
-                                <li><a href="products.html"><i className="icon-chevron-right"></i>Mobile Phone (80)</a></li>
-                                <li><a href="products.html"><i className="icon-chevron-right"></i>Sound & Vision (15)</a>
-                                </li>
+                                <li><a className="active" href="products.html"><i className="icon-chevron-right"></i>{u.subCategoryName} </a></li>
                             </ul>
                         </li>
                     ))}

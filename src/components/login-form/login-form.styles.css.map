@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "login-form.styles.scss"
-    ],
-    "names": [],
-    "file": "login-form.styles.css"
-}

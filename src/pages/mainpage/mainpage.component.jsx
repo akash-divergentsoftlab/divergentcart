@@ -7,6 +7,7 @@ import Breadcrumb from './../../components/breadcrumb/breadcrumb.component';
 import Sorting from '../../components/sorting/sorting.component';
 import Pagination from '../../components/pagination/pagination.component';
 import ProductList from './../../components/product-list/product-list.component';
+import Products from '../../components/products/products.component';
 
 
 function Mainpage() {
@@ -21,7 +22,8 @@ function Mainpage() {
                             <h4> 20% Discount Special offer<small className="pull-right"> 40 products are available </small></h4>
                             <hr className="soft" />
                             <Sorting />
-                            <ProductList />
+                            
+                            <Products/>
                         </div>
                         <Pagination />
                     </div>
